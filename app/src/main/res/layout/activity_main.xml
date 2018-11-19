@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
     tools:context=".MainActivity">
 
     <ImageView
@@ -66,6 +67,9 @@
             android:layout_weight="1"
             android:gravity="center"
             android:hint="Team A"
+            android:maxLines="1"
+            android:inputType="text"
+            android:imeOptions="actionNext"
             android:textColor="@color/colorBlack" />
 
         <EditText
@@ -74,6 +78,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
+            android:maxLines="1"
+            android:inputType="text"
+            android:imeOptions="actionDone"
             android:hint="Team B"
             android:textColor="@color/colorBlack" />
 

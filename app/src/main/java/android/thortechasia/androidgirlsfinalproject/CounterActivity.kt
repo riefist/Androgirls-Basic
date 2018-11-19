@@ -82,6 +82,7 @@ class CounterActivity : AppCompatActivity() {
         }
 
         btn_simpan.setOnClickListener {
+            this.toast("Match Berakhir")
             val i = Intent()
             i.putExtra(EXTRA_TEAMA, teamA_name.text.toString())
             i.putExtra(EXTRA_TEAMB, teamB_name.text.toString())
